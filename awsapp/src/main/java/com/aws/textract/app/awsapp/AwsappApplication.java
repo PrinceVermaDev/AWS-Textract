@@ -27,47 +27,7 @@ public class AwsappApplication {
 
 	public static void main(String[] args) throws JsonProcessingException {
 		SpringApplication.run(AwsappApplication.class, args);
-
-//		S3AsyncClient client = S3AsyncClient.builder().region(Region.US_EAST_1).build();
-//
-//		String document = "Textract-Blog-6.png";
-//		String bucket = "demobuckettextract";
-//
-//		CompletableFuture<ResponseBytes<GetObjectResponse>> responseFuture = client.getObject(
-//				GetObjectRequest.builder().bucket("demobuckettextract").key("Textract-Blog-6.png").build(),
-//				AsyncResponseTransformer.toBytes());
-//       List<AnalyzeExpenseResponse> finalResult=new LinkedList<AnalyzeExpenseResponse>();
-//		CompletableFuture<ResponseBytes<GetObjectResponse>> operationCompleteFuture = responseFuture
-//				.whenComplete((getObjectResponse, exception) -> {
-//					if (getObjectResponse != null) {
-//
-//						TextractClient textractclient = TextractClient.builder().region(Region.US_EAST_1).build();
-//
-//						AnalyzeExpenseRequest request = AnalyzeExpenseRequest
-//								.builder().document(Document.builder().s3Object(S3Object.builder()
-//										.name("Textract-Blog-6.png").bucket("demobuckettextract").build()).build())
-//								.build();
-//
-//						AnalyzeExpenseResponse result = textractclient.analyzeExpense(request);
-//						
-//						//System.out.println(result.toString());
-//				    
-//						finalResult.add(result);
-//
-//
-//					} else {
-//						exception.printStackTrace();
-//					}
-//				});
-//
-//		
-//		operationCompleteFuture.join();
-//		//System.out.println(finalResult);
-//		
-//		String json=new ObjectMapper().writeValueAsString(finalResult);
-//		
-//		System.out.println(json);
-//		
+		
 
 	}
 	
