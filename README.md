@@ -36,7 +36,4 @@ Before running this project, you need to:
 - [AWS Textract Documentation](https://docs.aws.amazon.com/textract/index.html) - Official documentation for AWS Textract.
 - [AWS SDK for Java Documentation](https://docs.aws.amazon.com/sdk-for-java/index.html) - Official documentation for the AWS SDK for Java.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
